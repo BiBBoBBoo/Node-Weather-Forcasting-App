@@ -1,11 +1,3 @@
-console.log('This is coming from the static file')
-
-fetch('http://puzzle.mead.io/puzzle').then((Response)=>{
-    Response.json().then((data)=>{
-        console.log(data)
-    })
-})
-
 const weatherForm = document.querySelector('form')
 
 const search = document.querySelector('input')
