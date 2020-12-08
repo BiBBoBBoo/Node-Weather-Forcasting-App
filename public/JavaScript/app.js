@@ -13,7 +13,7 @@ weatherForm.addEventListener('submit', (e)=>{
     document.getElementById('p2').innerHTML = ''
 
     if(!location){
-        document.getElementById('p1').innerHTML = 'Please enter an address!!!'
+        document.getElementById('p1').innerHTML = 'Please enter a Location!!!'
         document.getElementById('p1').style.color = 'red'
         document.getElementById('p2').innerHTML = ''
     }
