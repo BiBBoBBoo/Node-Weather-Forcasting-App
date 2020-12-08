@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/weather.png">
+    <title>Weather</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+    <div class="main">
+        {{>header}}  
+        <h3 style="color: rgb(88, 88, 88);">Enter Your Location Bellow</h3>
+        <form style="padding-top: 10px;">
+            <input placeholder="location">
+            <button>Search</button>
+        </form>
+        <div class="forcast">
+            <p id="p1"></p>
+            <p id="p2"></p>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="/JavaScript/app.js"></script>
+</body>
+</html>
