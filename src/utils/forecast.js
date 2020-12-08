@@ -15,7 +15,7 @@ const forecast = (lattitude, longitude, callback)=>{
             callback(('Error!!!') + ' ' + response.body.error.code + (' Location not found'), undefined)
         }
         else{
-            callback(undefined, response.body.current.weather_descriptions[0] + '. The current temperature is ' + response.body.current.temperature + '. It feels like ' + response.body.current.feelslike)
+            callback(undefined, response.body.current.weather_descriptions[0] + '. The current temperature is ' + response.body.current.temperature + '. It feels like ' + response.body.current.feelslike + '. The humidity is ' + response.body.current.humidity + '% and there is ' + response.body.current.precip + '% chances of rainfall')
         }
     })
 }
